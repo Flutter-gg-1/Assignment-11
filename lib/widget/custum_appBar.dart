@@ -25,7 +25,7 @@ class CustumAppbar extends StatelessWidget implements PreferredSizeWidget{
           )
         ],
       ),
-      actions: const [Icon(Icons.speaker), Icon(Icons.speaker)],
+      actions:  [Icon(Icons.speaker), Icon(Icons.speaker , color: Colors.black.withOpacity(0.2),)],
     );
   }
   
