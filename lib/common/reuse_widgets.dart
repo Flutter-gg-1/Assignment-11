@@ -7,7 +7,7 @@ PreferredSizeWidget? appBar() {
       padding: EdgeInsets.only(left: 20),
       child: Row(
         children: [
-          Icon(Icons.arrow_back),
+          IconButton(onPressed: null, icon: Icon(Icons.arrow_back)),
           SizedBox(width: 10),
           Column(
             children: [
@@ -25,14 +25,14 @@ PreferredSizeWidget? appBar() {
         ],
       ),
     ),
-    actions: [
+    actions: const [
       Row(
         children: [
-          const Icon(Icons.volume_up),
-          const SizedBox(width: 10),
+          Icon(Icons.volume_up),
+          SizedBox(width: 10),
           IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.file_upload_outlined),
+            onPressed: null,
+            icon: Icon(Icons.file_upload_outlined),
           ),
         ],
       ),
