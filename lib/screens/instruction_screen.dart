@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'chat_screen.dart';
-import 'instruction_button.dart';
+import '../widgets/instruction_button.dart';
 
 class InstructionScreen extends StatelessWidget {
   const InstructionScreen({super.key});

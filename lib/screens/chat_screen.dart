@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'chat_user_card.dart';
-import 'chat_ai_card.dart';
+import '../widgets/chat_user_card.dart';
+import '../widgets/chat_ai_card.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
