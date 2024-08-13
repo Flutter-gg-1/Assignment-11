@@ -1,3 +1,4 @@
+import 'package:assignment/src/chat_screen.dart';
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -86,20 +87,29 @@ class SecondScreen extends StatelessWidget {
                   fontSize: 16,
                 ),
               )),
-          Container(
-              margin: const EdgeInsets.only(top: 10, bottom: 50),
-              alignment: Alignment.center,
-              width: 300,
-              height: 40,
-              decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 221, 221, 221),
-                  borderRadius: BorderRadius.circular(20)),
-              child: const Text(
-                " Best programming language ",
-                style: TextStyle(
-                  fontSize: 16,
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const ChatScreen();
+                  },
                 ),
-              )),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 221, 221, 221),
+              minimumSize: const Size(300, 35),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(19),
+              ),
+            ),
+            child: const Text(
+              "Best programming language",
+              style: TextStyle(fontSize: 15, color: Colors.black),
+            ),
+          ),
+          SizedBox(height: 30,),
           const Icon(
             Icons.edit_outlined,
             size: 40,
