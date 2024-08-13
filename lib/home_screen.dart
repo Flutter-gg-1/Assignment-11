@@ -26,12 +26,37 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.only(left: 10, right: 10),
               child: Text(
                 'Using this software, you can ask your questions and receive articles using artificial intelligence assitant',
-                style: TextStyle(color:  Colors.grey, fontSize: 20,  fontWeight: FontWeight.w500),
+                style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500),
                 textAlign: TextAlign.center,
               ),
             )
           ],
         ),
+      ),
+      bottomSheet: ElevatedButton(
+        child: Row(
+          children: [
+            Text(
+              'Continue',
+              style: TextStyle(color: Colors.white),
+            ),
+            Icon(
+              Icons.arrow_forward,
+              color: Colors.white,
+            )
+          ],
+        ),
+        style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 65, 84, 235),
+            fixedSize: Size(350, 60)),
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return InstructionScreen();
+          }));
+        },
       ),
     );
   }
