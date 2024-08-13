@@ -10,7 +10,7 @@ class AiHomeScreen extends StatelessWidget {
       backgroundColor: const Color.fromARGB(255, 247, 236, 236),
       body: SafeArea(
           child: Padding(
-            padding: const EdgeInsets.only(top: 200),
+            padding: const EdgeInsets.only(top: 300),
             child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -18,7 +18,7 @@ class AiHomeScreen extends StatelessWidget {
                 child: Text(
               "You AI Assistant",
               style: TextStyle(
-                  color: Colors.blue, fontSize: 20, fontWeight: FontWeight.bold),
+                  color: Color.fromARGB(255, 197, 25, 111), fontSize: 20, fontWeight: FontWeight.bold),
             )),
             const Center(
                 child: Text(
@@ -29,7 +29,7 @@ class AiHomeScreen extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             )),
-            const Padding(padding:  EdgeInsets.only(top: 400)),
+            const Padding(padding:  EdgeInsets.only(top: 350)),
                 SizedBox(
                   height: 45,
                   width: 350,
@@ -41,7 +41,7 @@ class AiHomeScreen extends StatelessWidget {
                       },
                       style: ElevatedButton.styleFrom(
                         elevation: 12,
-                        backgroundColor: Colors.blue
+                        backgroundColor: const Color.fromARGB(255, 197, 25, 111)
                       ),
                       child: const Row(
                         mainAxisAlignment: MainAxisAlignment.center,

@@ -1,3 +1,6 @@
+import 'package:assignment11/main.dart';
+import 'package:assignment11/src/recieve_message.dart';
+import 'package:assignment11/src/send_message.dart';
 import 'package:flutter/material.dart';
 
 class SecondChatgptScreen extends StatelessWidget {
@@ -16,7 +19,7 @@ class SecondChatgptScreen extends StatelessWidget {
           )
         ),
         title: const ListTile(
-          title: Text("ChatGPT", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.blue),),
+          title: Text("ChatGPT", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 197, 25, 111)),),
           subtitle: Row(
             children: [
               CircleAvatar(
@@ -36,10 +39,25 @@ class SecondChatgptScreen extends StatelessWidget {
           Icon(Icons.ios_share_rounded,size: 26,)
         ],
       ),
-      body: Column(
-        children: [
-          
-        ],
+      body: const SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            SizedBox(height: 20,),
+            SendMessage(message: "Hello chatGPT,how are you today?",),
+            SizedBox(height: 20,),
+            RecieveMessage(message: "Hello,i'm fine,how can i help you?",),
+            SizedBox(height: 20,),
+            SendMessage(message: "What is the best programming language?",),
+            SizedBox(height: 20,),
+            RecieveMessage(message: "There are many programming languages in the market that are used in designing and building websites, various applications and other tasks. All these languages are popular in their place and in the way they are used, and many programmers learn and use them.",),
+            SizedBox(height: 20,),
+            SendMessage(message: "So explain to me more",),
+            SizedBox(height: 20,),
+            RecieveMessage(message: "There are many programming languages in the market that are used in designing and building websites, various applications and other tasks. All these languages are popular in their place and in the way they are used, and many programmers learn and use them.",),
+
+          ],
+        ),
       ),
     );
   }

@@ -17,7 +17,7 @@ class FirstChatgptScreen extends StatelessWidget {
           )
         ),
         title: const ListTile(
-          title: Text("ChatGPT", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.blue),),
+          title: Text("ChatGPT", style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Color.fromARGB(255, 197, 25, 111)),),
           subtitle: Row(
             children: [
               CircleAvatar(
