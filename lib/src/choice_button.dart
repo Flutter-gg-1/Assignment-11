@@ -9,7 +9,7 @@ class ChoiceButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 300,
+      width: 350,
       child: TextButton(
         style: ButtonStyle(
           backgroundColor: WidgetStateProperty.all(Colors.grey.shade200)
@@ -20,7 +20,7 @@ class ChoiceButton extends StatelessWidget {
               return const ChatScreen();
             }));
         } : () {},
-        child: Text(text,textAlign: TextAlign.center ,style: const TextStyle(fontSize: 13,color: Colors.black87),)),
+        child: Text(text,textAlign: TextAlign.center ,style: const TextStyle(fontWeight: FontWeight.w400,fontSize: 14,color: Colors.black87),)),
     );
   }
 }

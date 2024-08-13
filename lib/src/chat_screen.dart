@@ -1,3 +1,6 @@
+import 'package:assignment11/src/chat_app_bar.dart';
+import 'package:assignment11/src/chat_response.dart';
+import 'package:assignment11/src/user_message.dart';
 import 'package:flutter/material.dart';
 
 class ChatScreen extends StatelessWidget {
@@ -5,6 +8,20 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return const Scaffold(
+      appBar:
+          PreferredSize(preferredSize: Size(1, 55), child: ChatAppBar()),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          UserMessage(text: "Hello chatGPT,how are you today?"),
+          ChatResponse(text: "Hello,i'm fine,how can i help you?"),
+          UserMessage(text: "What is the best programming language?"),
+          ChatResponse(text: "There are many programming languages in the market that are used in designing and building websites, various applications and other tasks. All these languages are popular in their place and in the way they are used, and many programmers learn and use them."),
+          UserMessage(text: "So explain to me more"),
+          ChatResponse(text: "There are many programming languages in the market that are used in designing and building websites, various applications and other tasks. All these languages are popular in their place and in the way they are used, and many programmers learn and use them."),
+        ],
+      ),
+    );
   }
 }

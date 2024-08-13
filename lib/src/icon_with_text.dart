@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class IconWithText extends StatelessWidget {
-  final Icon icon;
+  final IconData icon;
   final String text;
   const IconWithText({super.key, required this.icon, required this.text});
 
@@ -9,8 +9,9 @@ class IconWithText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Icon(Icons.my_library_books_outlined),
-        Text(text,style: const TextStyle(fontWeight: FontWeight.w500),
+        Icon(icon, size: 30),
+        const SizedBox(height: 5),
+        Text(text,style: const TextStyle(fontSize: 18,fontWeight: FontWeight.w500),
         ),
       ],
     );
