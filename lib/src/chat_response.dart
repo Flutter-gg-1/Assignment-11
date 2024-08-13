@@ -16,7 +16,7 @@ class ChatResponse extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             margin: const EdgeInsets.only(left: 50),
             decoration: BoxDecoration(
-                color: Colors.grey.shade300,
+                color: Colors.grey.shade400,
                 borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),

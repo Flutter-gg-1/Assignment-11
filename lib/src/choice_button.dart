@@ -13,7 +13,7 @@ class ChoiceButton extends StatelessWidget {
       width: 350,
       child: TextButton(
         style: ButtonStyle(
-          backgroundColor: WidgetStateProperty.all(Colors.grey.shade200)
+          backgroundColor: WidgetStateProperty.all(Colors.grey.shade400)
         ),
         onPressed: navigate ? () {
           Navigator.push(context, MaterialPageRoute(
