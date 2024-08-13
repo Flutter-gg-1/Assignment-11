@@ -5,7 +5,7 @@ class ChatAiCard extends StatelessWidget {
   ChatAiCard({super.key, required this.message});
 
   @override
-    Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 50),
       child: Container(

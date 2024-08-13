@@ -40,51 +40,67 @@ class InstructionScreen extends StatelessWidget {
           IconButton(onPressed: () {}, icon: Icon(Icons.logout))
         ],
       ),
-      body: Column(
-        children: [
-          Icon(Icons.menu),
-          Text('Explain'),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[0]}',
+      body: Padding(
+        padding: EdgeInsets.only(top: 50, bottom: 50),
+        child: Center(
+          child: Column(
+            children: [
+              Icon(Icons.menu),
+              Text('Explain',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold)),
+              SizedBox(height: 10),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[0]}',
+              ),
+              InstructionButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return ChatScreen();
+                  }));
+                },
+                instruction: '${instructions[1]}',
+              ),
+              SizedBox(height: 20),
+              Icon(Icons.edit),
+              Text('Write & edit',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold)),
+              SizedBox(height: 10),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[2]}',
+              ),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[3]}',
+              ),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[4]}',
+              ),
+              SizedBox(height: 20),
+              Icon(Icons.translate),
+              Text('Translate',
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold)),
+              SizedBox(height: 10),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[5]}',
+              ),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[6]}',
+              ),
+              InstructionButton(
+                onPressed: () {},
+                instruction: '${instructions[7]}',
+              ),
+            ],
           ),
-          InstructionButton(
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ChatScreen();
-              }));
-            },
-            instruction: '${instructions[1]}',
-          ),
-          Icon(Icons.edit),
-          Text('Write & edit'),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[2]}',
-          ),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[3]}',
-          ),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[4]}',
-          ),
-          Icon(Icons.translate),
-          Text('Translate'),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[5]}',
-          ),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[6]}',
-          ),
-          InstructionButton(
-            onPressed: () {},
-            instruction: '${instructions[7]}',
-          ),
-        ],
+        ),
       ),
     );
   }

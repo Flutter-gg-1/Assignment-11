@@ -36,27 +36,37 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-      bottomSheet: ElevatedButton(
-        child: Row(
-          children: [
-            Text(
-              'Continue',
-              style: TextStyle(color: Colors.white),
-            ),
-            Icon(
-              Icons.arrow_forward,
-              color: Colors.white,
-            )
-          ],
+      bottomSheet: Padding(
+        padding: EdgeInsets.only(bottom: 15),
+        child: ElevatedButton(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                'Continue',
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+              Icon(
+                Icons.arrow_forward,
+                color: Colors.white,
+              )
+            ],
+          ),
+          style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 65, 84, 235),
+              fixedSize: Size(350, 50)),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) {
+              return InstructionScreen();
+            }));
+          },
         ),
-        style: ElevatedButton.styleFrom(
-            backgroundColor: const Color.fromARGB(255, 65, 84, 235),
-            fixedSize: Size(350, 60)),
-        onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return InstructionScreen();
-          }));
-        },
       ),
     );
   }

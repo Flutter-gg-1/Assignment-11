@@ -9,22 +9,13 @@ class InstructionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            '$instruction',
-            style: TextStyle(color: Colors.white),
-          ),
-          Icon(
-            Icons.arrow_forward,
-            color: Colors.white,
-          ),
-        ],
+      child: Text(
+        '$instruction',
+        style: TextStyle(color: Colors.black),
       ),
       style: ElevatedButton.styleFrom(
-          backgroundColor: const Color.fromARGB(255, 65, 84, 235),
-          fixedSize: Size(350, 60)),
+          backgroundColor: const Color.fromARGB(255, 223, 223, 223),
+          fixedSize: Size(350, 40)),
       onPressed: onPressed,
     );
   }

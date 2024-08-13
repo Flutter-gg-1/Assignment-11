@@ -61,18 +61,18 @@ class ChatScreen extends StatelessWidget {
             right: 0,
             left: 0,
             child: Container(
-                height: 150, 
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Colors.white.withOpacity(0.7),
-                      Colors.black.withOpacity(0.1),
-                    ],
-                  ),
+              height: 150,
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.white.withOpacity(0.7),
+                    Colors.black.withOpacity(0.1),
+                  ],
                 ),
               ),
+            ),
           ),
         ],
       ),
