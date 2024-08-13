@@ -9,7 +9,7 @@ class Opitons extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           shadowColor: Colors.black,
-          elevation: 1.0,
+          elevation: 0.5,
           leading: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () {
@@ -54,8 +54,145 @@ class Opitons extends StatelessWidget {
               ),
             )
           ]),
-    
-    
+      body: SingleChildScrollView(
+          child: Center(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 30,
+            ),
+            const Icon(
+              Icons.text_snippet_outlined,
+              color: Colors.grey,
+              size: 35,
+            ),
+            const Text(
+              "Explain",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("Explain Quantum physics"),
+                )),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("Best programming language"),
+                )),
+            const SizedBox(
+              height: 20,
+            ),
+            const Icon(
+              Icons.edit,
+              color: Colors.grey,
+              size: 35,
+            ),
+            const Text(
+              "Write & edit",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("Write a tweet about global warming"),
+                )),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("write a poem about flower and love"),
+                )),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("Write a rap song lyrics about friends"),
+                )),
+            const SizedBox(
+              height: 20,
+            ),
+            const Icon(
+              Icons.translate,
+              color: Colors.grey,
+              size: 35,
+            ),
+            const Text(
+              "Translate",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("How do you say \"how are you\"in korean"),
+                )),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("write a poem about flower and love"),
+                )),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+                width: 350,
+                height: 50,
+                decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 238, 237, 237),
+                    borderRadius: BorderRadius.circular(25)),
+                child: const Center(
+                  child: Text("Write a rap song lyrics about friends"),
+                )),
+          ],
+        ),
+      )),
     );
   }
 }
