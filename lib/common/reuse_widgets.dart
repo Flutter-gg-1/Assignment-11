@@ -16,7 +16,8 @@ PreferredSizeWidget? appBar() {
                         color: Color.fromRGBO(0, 86, 254, 1),
                       ))),
               Expanded(
-                  child: Text('Online', style: TextStyle(color: Colors.green))),
+                  child:
+                      Text('* Online', style: TextStyle(color: Colors.green))),
             ],
           ),
         ],
@@ -46,7 +47,7 @@ class myButton extends StatelessWidget {
   final double? fontSize;
   final MainAxisAlignment mainAxisAlignment;
   final IconData? icon;
-  final EdgeInsetsGeometry padding;
+  final EdgeInsetsGeometry? padding;
   const myButton({
     super.key,
     required this.text,
@@ -57,7 +58,7 @@ class myButton extends StatelessWidget {
     this.fontSize,
     this.mainAxisAlignment = MainAxisAlignment.center,
     this.icon,
-    required this.padding,
+    this.padding,
   });
 
   @override
@@ -71,13 +72,13 @@ class myButton extends StatelessWidget {
         ),
         onPressed: onPressed,
         child: Padding(
-          padding:  padding,
+          padding: padding ?? EdgeInsets.zero,
           child: Row(
             mainAxisAlignment: mainAxisAlignment,
             children: [
-              Text('Continue',
+              Text(text,
                   style: TextStyle(color: textColor, fontSize: fontSize)),
-               Icon(icon, color: iconColor),
+              Icon(icon, color: iconColor),
             ],
           ),
         ),
