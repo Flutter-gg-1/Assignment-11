@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../core/all_file.dart';
 class AIAssistant extends StatelessWidget {
   const AIAssistant({super.key});
 
@@ -30,7 +30,9 @@ class AIAssistant extends StatelessWidget {
             ),
             const Spacer(),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                context.goTo(const ChatGPTPage());
+              },
               child: const Text('Start Chat'),
             ),
           ],
