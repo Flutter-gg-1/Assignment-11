@@ -57,8 +57,7 @@ class WelcomeScreen extends StatelessWidget {
                   alignment: Alignment.centerRight,
                   backgroundColor: WidgetStateProperty.all(Colors.blue)),
               onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) {
+                Navigator.push(context,MaterialPageRoute(builder: (context) {
                   return const ChoicesScreen();
                 }));
               },
