@@ -1,16 +1,16 @@
-import 'package:assignment11/src/chat_app_bar.dart';
-import 'package:assignment11/src/chat_response.dart';
-import 'package:assignment11/src/user_message.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';                 // imports material design widgets and properities
+import 'package:assignment11/src/chat_app_bar.dart';    // widget represents app bar
+import 'package:assignment11/src/user_message.dart';    // widget represents user message
+import 'package:assignment11/src/chat_response.dart';   // widget represents ChatGPT response
 
+// widget represents chat page
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar:
-          PreferredSize(preferredSize: Size(1, 55), child: ChatAppBar()),
+      appBar: PreferredSize(preferredSize: Size(1, 55), child: ChatAppBar()),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

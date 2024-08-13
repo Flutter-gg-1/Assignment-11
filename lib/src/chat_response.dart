@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // imports material design widgets and properities
 
+// widget represents ChatGPT response
 class ChatResponse extends StatelessWidget {
   final String text;
   const ChatResponse({super.key, required this.text});

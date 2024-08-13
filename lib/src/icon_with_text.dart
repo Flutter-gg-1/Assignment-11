@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // imports material design widgets and properities
 
+// widget represents an icon with bototm text
 class IconWithText extends StatelessWidget {
   final IconData icon;
   final String text;

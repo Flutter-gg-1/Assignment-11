@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // imports material design widgets and properities
 
+// widget represents user message
 class UserMessage extends StatelessWidget {
   final String text;
   const UserMessage({super.key, required this.text});
