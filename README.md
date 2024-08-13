@@ -45,17 +45,7 @@ The widgets that are used:
 
 ## Output 
 
-<p align="center">
-<img src="assets/home.png" alt="home" width="300"/>
-<br/>
-
-<p align="center">
-<img src="assets/second.png" alt="second" width="300"/>
-<br/>
-
-<p align="center">
-<img src="assets/third.png" alt="third" width="300"/>
-<br/>
+https://github.com/user-attachments/assets/675240a4-af67-4128-8b2b-57597c65ac73
 
 ## created by
 Amjad Noor Elahi
