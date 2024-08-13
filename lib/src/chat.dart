@@ -90,7 +90,7 @@ class Chat extends StatelessWidget {
             Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   child: Container(
                       width: 280,
                       height: 50,
@@ -137,7 +137,7 @@ class Chat extends StatelessWidget {
             Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   child: Container(
                       width: 280,
                       height: 180,
@@ -185,7 +185,7 @@ class Chat extends StatelessWidget {
             Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   child: Container(
                       width: 280,
                       height: 180,
