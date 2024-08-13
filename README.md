@@ -1,17 +1,38 @@
-## Assignment-11:
-Implement this design in an app using Flutter, using widgets that we take in lesson today.
+# Flutter Navigation (Push and Pop Widgets)
 
-<img width="1007" alt="Screenshot 2024-08-13 at 4 06 57 PM" src="https://github.com/user-attachments/assets/6ff9445b-7580-44c8-ba54-59ecf5529ded">
+A three interface app created using Dart-Flutter for an 'AI Assistant' prototype.
+- The ony interactions in the app are for navigating between pages. 
+- Widgets used: Navigator, AppBar, ListView, ElevatedButton, IconButton, Column, Row, Container, Padding, Spacer, Expanded, SizedBox, Text, Icon
 
-## Note:
-1. Use Navigator widgets; to navigate between screens.
-2. Upload GIF or Video of your app.
-3. If you upload GIF, upload it in README file.
+## Table of Contents
 
+- [Installation](#installation)
+- [App Clip](#app-clip)
+- [Created By](#created-by)
 
-## Submission Details:
-Deadline: 14 August 2024
-Submission Format: Provide your Flutter code file(s) along with a README file explaining widgets you are used.
+## Installation
 
-Good luck 🚀
-and happy coding! 🧑‍💻
+To install and run this application, follow these steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/amer266030/Assignment-11.git
+    ```
+
+2. **Run the application:**
+
+    ```bash
+    cd ai_assistant
+    flutter run
+    ```
+
+## App Clip
+
+![App Clip](ai_assistant_clip.gif)
+
+## Created By
+
+- **Amer Alyusuf**
+- [Personal Website](https://amer266030.github.io)
+- [LinkedIn](https://www.linkedin.com/in/amer-alyusuf-77398587)

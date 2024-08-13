@@ -8,6 +8,7 @@ class TopicSelectionScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         leading: BackButton(onPressed: () {
           Navigator.pop(context);
         }),

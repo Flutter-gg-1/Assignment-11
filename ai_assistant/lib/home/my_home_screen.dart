@@ -12,7 +12,7 @@ class MyHomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
           child: Padding(
-        padding: EdgeInsets.all(24.0),
+        padding: const EdgeInsets.all(24.0),
         child: Column(
           children: [
             const Spacer(flex: 1),
