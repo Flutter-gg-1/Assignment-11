@@ -7,7 +7,6 @@ class InstructionScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> status = ['Online', 'Offline'];
     List<String> instructions = [
       'Explain Quantum physics',
       'Best programming language',
@@ -30,7 +29,7 @@ class InstructionScreen extends StatelessWidget {
                     color: const Color.fromARGB(255, 65, 84, 235),
                     fontWeight: FontWeight.bold)),
             Text(
-              '\u2022 ${status[0]}',
+              '\u2022 Online}',
               style:
                   TextStyle(color: Colors.green, fontWeight: FontWeight.w700),
             )

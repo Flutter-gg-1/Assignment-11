@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class InstructionButton extends StatelessWidget {
   final VoidCallback onPressed;
-  String instruction;
+  final String instruction;
 
   InstructionButton({required this.onPressed, required this.instruction});
 
