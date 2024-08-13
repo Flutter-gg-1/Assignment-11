@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 PreferredSizeWidget? appBar() {
   return AppBar(
     leading: const Padding(
@@ -33,4 +35,53 @@ PreferredSizeWidget? appBar() {
       ),
     ],
   );
+}
+
+class myButton extends StatelessWidget {
+  final String text;
+  final VoidCallback onPressed;
+  final Color? backgroundColorForButton;
+  final Color? textColor;
+  final Color? iconColor;
+  final double? fontSize;
+  final MainAxisAlignment mainAxisAlignment;
+  final IconData? icon;
+  final EdgeInsetsGeometry padding;
+  const myButton({
+    Key? key,
+    required this.text,
+    required this.onPressed,
+    this.backgroundColorForButton,
+    this.textColor,
+    this.iconColor,
+    this.fontSize,
+    this.mainAxisAlignment = MainAxisAlignment.center,
+    this.icon,
+    required this.padding,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 300,
+      height: 50,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: backgroundColorForButton,
+        ),
+        onPressed: onPressed,
+        child: Padding(
+          padding:  padding,
+          child: Row(
+            mainAxisAlignment: mainAxisAlignment,
+            children: [
+              Text('Continue',
+                  style: TextStyle(color: textColor, fontSize: fontSize)),
+               Icon(icon, color: iconColor),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
