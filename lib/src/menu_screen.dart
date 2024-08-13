@@ -1,3 +1,6 @@
+import 'package:chatgpt_ui/src/chat_screen.dart';
+import 'package:chatgpt_ui/widget/list_header.dart';
+import 'package:chatgpt_ui/widget/option_tile.dart';
 import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -23,8 +26,34 @@ class MenuScreen extends StatelessWidget {
           SizedBox(
             width: 60,
             child: Icon(Icons.volume_up,size: 30,)),
-          Icon(Icons.upload_outlined,size: 30)],
+          Icon(Icons.upload_outlined,size: 30,color: Colors.grey,)],
       ),
+      body:  SafeArea(child: 
+      Padding(
+        padding: const EdgeInsets.all(20),
+        child: Center(
+          child: Column(
+            children: [
+              listHeader(icon: Icons.text_snippet_outlined,text: 'Explain'),
+              optionListTile(context,'Explain Quantum physics',const ChatScreen()),
+              optionListTile(context,'Best programing language',const ChatScreen()),
+
+              listHeader(icon: Icons.edit_note,text: 'Write & edit'),
+              optionListTile(context,'Write tweet about global warming',const ChatScreen()),
+              optionListTile(context,'Write poem about flower and love',const ChatScreen()),
+              optionListTile(context,'Write a rap song lyrics about',const ChatScreen()),
+
+              listHeader(icon: Icons.translate_outlined,text: 'Translate'),
+              optionListTile(context,'How do you say "how are you" in korean?',const ChatScreen()),
+              optionListTile(context,'Write poem about flower and love',const ChatScreen()),
+              optionListTile(context,'Write a rap song lyrics about',const ChatScreen()),
+            ],
+          ),
+        ),
+      )),
     );
   }
+
+
+
 }
