@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 PreferredSizeWidget? appBar() {
   return AppBar(
     leading: const Padding(
-      padding: EdgeInsets.only(left: 30),
+      padding: EdgeInsets.only(left: 20),
       child: Row(
         children: [
+          Icon(Icons.arrow_back),
+          SizedBox(width: 10),
           Column(
             children: [
               Expanded(
