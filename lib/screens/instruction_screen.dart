@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'chat_screen.dart';
-import '../widgets/instruction_button.dart';
+import '../widgets/gpt_option.dart';
 
 class InstructionScreen extends StatelessWidget {
   const InstructionScreen({super.key});
@@ -13,7 +12,7 @@ class InstructionScreen extends StatelessWidget {
       'Write a tweet about global warming',
       'Write a poem about flower and love',
       'write a rap song lyrics about',
-      'Howw do you say "how are you" in korean',
+      'How do you say "how are you" in korean',
       'Write a poem about flower and love',
       'write a rap song lyrics about'
     ];
@@ -46,58 +45,27 @@ class InstructionScreen extends StatelessWidget {
           child: Column(
             children: [
               Icon(Icons.menu),
-              Text('Explain',
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold)),
-              SizedBox(height: 10),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[0]}',
-              ),
-              InstructionButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return ChatScreen();
-                  }));
-                },
-                instruction: '${instructions[1]}',
+              GptOption(
+                label: 'Explain',
+                instruction_1: instructions[0],
+                instruction_2: instructions[1],
+                instruction_3: '',
               ),
               SizedBox(height: 20),
               Icon(Icons.edit),
-              Text('Write & edit',
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold)),
-              SizedBox(height: 10),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[2]}',
-              ),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[3]}',
-              ),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[4]}',
+              GptOption(
+                label: 'Write & edit',
+                instruction_1: instructions[2],
+                instruction_2: instructions[3],
+                instruction_3: instructions[4],
               ),
               SizedBox(height: 20),
               Icon(Icons.translate),
-              Text('Translate',
-                  style: TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold)),
-              SizedBox(height: 10),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[5]}',
-              ),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[6]}',
-              ),
-              InstructionButton(
-                onPressed: () {},
-                instruction: '${instructions[7]}',
-              ),
+              GptOption(
+                  label: 'Translate',
+                  instruction_1: instructions[5],
+                  instruction_2: instructions[6],
+                  instruction_3: instructions[7])
             ],
           ),
         ),
