@@ -22,7 +22,9 @@ class ChatGPTPage extends StatelessWidget {
               const SizedBox(height: 5),
               myButton(
                 text: 'Best programming language',
-                onPressed: () {},
+                onPressed: () {
+                  context.goTo(const Chat());
+                },
               ),
               const SizedBox(height: 15),
               const Icon(Icons.edit, size: 50),
