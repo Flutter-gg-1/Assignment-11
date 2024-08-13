@@ -25,16 +25,16 @@ This Flutter application is used to chat with GPT AI, it is simple to use and vi
 
 - Note: a video showing UI is uploaded in assets\video
 
-![Display All users](./assets/images/1.png)
+![HomeScreen](./assets/images/1.png)
 
 
-![Display All users](./assets/images/2.png)
+![InstructionScreen](./assets/images/2.png)
 
 
-![Display All users](./assets/images/3.png)
+![ChatScreen](./assets/images/3.png)
 
 
-![Display All users](./assets/images/4.png)
+![ChatScreen - scrolled down](./assets/images/4.png)
 
 
 ## Authors
