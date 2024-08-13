@@ -1,3 +1,4 @@
+import 'package:assignment_11/src/chat.dart';
 import 'package:assignment_11/src/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -85,15 +86,22 @@ class Opitons extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            Container(
-                width: 350,
-                height: 50,
-                decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 238, 237, 237),
-                    borderRadius: BorderRadius.circular(25)),
-                child: const Center(
-                  child: Text("Best programming language"),
-                )),
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return const Chat();
+                }));
+              },
+              child: Container(
+                  width: 350,
+                  height: 50,
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 238, 237, 237),
+                      borderRadius: BorderRadius.circular(25)),
+                  child: const Center(
+                    child: Text("Best programming language"),
+                  )),
+            ),
             const SizedBox(
               height: 20,
             ),
