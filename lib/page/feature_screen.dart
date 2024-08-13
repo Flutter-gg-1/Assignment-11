@@ -1,3 +1,4 @@
+import 'package:assignment11/page/chat_screen.dart';
 import 'package:flutter/material.dart';
 
 class FeatureScreen extends StatelessWidget {
@@ -30,23 +31,31 @@ class FeatureScreen extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           child: Center(
             child: ListView(
-              children: const [
+              children: [
                 //explain
-                Icon(Icons.message_sharp),
-                Center(child: Text("Explain")),
-                SizedBox(
+                const Icon(Icons.message_sharp),
+                const Center(
+                  child: Text("Explain"),
+                ),
+                const SizedBox(
                   height: 13,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
-                    child: Center(child: Text("Explain Quantum physics")),
+                    child: Center(
+                      child: Text("Explain Quantum physics"),
+                    ),
                   ),
                 ),
                 InkWell(
-                  onTap: null,
-                  child: SizedBox(
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const ChatScreen(),
+                    ),
+                  ),
+                  child: const SizedBox(
                     height: 50,
                     child: Card(
                       elevation: 6,
@@ -54,75 +63,87 @@ class FeatureScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 13,
                 ),
                 //Write and edit
-                Icon(Icons.note_alt),
+                const Icon(Icons.note_alt),
 
-                Center(child: Text("Write and edit")),
-                SizedBox(
+                const Center(
+                  child: Text("Write and edit"),
+                ),
+                const SizedBox(
                   height: 13,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
                     child: Center(
-                        child: Text("Write a tweet about global warming")),
+                      child: Text("Write a tweet about global warming"),
+                    ),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
                     child: Center(
-                        child: Text("Write a poem about flower and love")),
+                      child: Text("Write a poem about flower and love"),
+                    ),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
-                    child: Center(child: Text("Write a rap song lrics about")),
+                    child: Center(
+                      child: Text("Write a rap song lrics about"),
+                    ),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 13,
                 ),
                 //Write and edit
-                Icon(Icons.translate),
+                const Icon(Icons.translate),
 
-                Center(child: Text("translate")),
-                SizedBox(
+                const Center(
+                  child: Text("translate"),
+                ),
+                const SizedBox(
                   height: 13,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
                     child: Center(
-                        child: Text("How do you say 'how are you' in korean?")),
+                      child: Text("How do you say 'how are you' in korean?"),
+                    ),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
                     child: Center(
-                        child: Text("Write a poem about flower and love")),
+                      child: Text("Write a poem about flower and love"),
+                    ),
                   ),
                 ),
 
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: Card(
                     elevation: 6,
-                    child: Center(child: Text("Write a rap song lrics about")),
+                    child: Center(
+                      child: Text("Write a rap song lrics about"),
+                    ),
                   ),
                 ),
               ],
