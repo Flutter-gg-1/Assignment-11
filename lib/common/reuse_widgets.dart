@@ -7,7 +7,7 @@ PreferredSizeWidget? appBar() {
       padding: EdgeInsets.only(left: 20),
       child: Row(
         children: [
-          IconButton(onPressed: null, icon: Icon(Icons.arrow_back)),
+          Icon(Icons.arrow_back),
           SizedBox(width: 10),
           Column(
             children: [
