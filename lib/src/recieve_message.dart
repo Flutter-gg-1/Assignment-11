@@ -6,10 +6,9 @@ class RecieveMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: Container(
+    return Container(
                 margin: const EdgeInsets.only(left: 6, right: 180),
-                padding: const EdgeInsets.only(top: 15, left: 2),
+                padding: const EdgeInsets.only(top: 15, left: 6, bottom: 5, right: 3),
                 constraints: const BoxConstraints(
                   minHeight: 50,
                   minWidth: 100,
@@ -25,9 +24,8 @@ class RecieveMessage extends StatelessWidget {
                   )
                 ),
                 child: Text(message, style: const TextStyle(
-                  color: Colors.black, fontSize: 14
+                  color: Colors.black, fontSize: 16
                 ),),
-              ),
-    );
+              );
   }
 }

@@ -6,15 +6,14 @@ class SendMessage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: Container(
+    return Container(
                 margin: const EdgeInsets.only(left: 180, right: 6),
-                padding: const EdgeInsets.only(top: 15, left: 2),
+                padding: const EdgeInsets.only(top: 15, left: 6),
                 constraints: const BoxConstraints(
                   minHeight: 60,
-                  minWidth: 100,
-                  maxHeight: 700,
-                  maxWidth: 700
+                  minWidth: 300,
+                  maxHeight: 900,
+                  maxWidth: 900
                 ),
                 decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 197, 25, 111),
@@ -25,9 +24,9 @@ class SendMessage extends StatelessWidget {
                   )
                 ),
                 child: Text(message, style: const TextStyle(
-                  color: Colors.white, fontSize: 14
+                  color: Colors.white, fontSize: 16
                 ),),
-              ),
-    );
+              )
+    ;
   }
 }
