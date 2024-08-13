@@ -1,17 +1,16 @@
-## Assignment-11:
-Implement this design in an app using Flutter, using widgets that we take in lesson today.
+# chatgpt
 
-<img width="1007" alt="Screenshot 2024-08-13 at 4 06 57 PM" src="https://github.com/user-attachments/assets/6ff9445b-7580-44c8-ba54-59ecf5529ded">
+A new Flutter project.
 
-## Note:
-1. Use Navigator widgets; to navigate between screens.
-2. Upload GIF or Video of your app.
-3. If you upload GIF, upload it in README file.
+## Getting Started
 
+This project is a starting point for a Flutter application.
 
-## Submission Details:
-Deadline: 14 August 2024
-Submission Format: Provide your Flutter code file(s) along with a README file explaining widgets you are used.
+A few resources to get you started if this is your first Flutter project:
 
-Good luck 🚀
-and happy coding! 🧑‍💻
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
