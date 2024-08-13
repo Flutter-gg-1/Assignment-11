@@ -1,8 +1,7 @@
 ## Assignment-11:
 Implement this design in an app using Flutter, using widgets that we take in lesson today.
 
-<img width="999" alt="Screenshot 2024-08-13 at 2 34 37 PM" src="https://github.com/user-attachments/assets/01f8f410-7ff3-4e4a-ba39-e32ca1b3959f">
-
+<img width="1007" alt="Screenshot 2024-08-13 at 4 06 57 PM" src="https://github.com/user-attachments/assets/6ff9445b-7580-44c8-ba54-59ecf5529ded">
 
 ## Note:
 1. Use Navigator widgets; to navigate between screens.
