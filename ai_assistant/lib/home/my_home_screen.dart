@@ -15,7 +15,7 @@ class MyHomeScreen extends StatelessWidget {
         padding: EdgeInsets.all(24.0),
         child: Column(
           children: [
-            const Spacer(flex: 10),
+            const Spacer(flex: 1),
             const Text('Your AI Assistant',
                 style: TextStyle(
                   fontSize: 32,
@@ -30,7 +30,7 @@ class MyHomeScreen extends StatelessWidget {
                     fontSize: 18,
                     fontWeight: FontWeight.w500,
                     color: Colors.black.withOpacity(0.45))),
-            const Spacer(flex: 20),
+            const Spacer(flex: 2),
             Row(
               children: [
                 Expanded(

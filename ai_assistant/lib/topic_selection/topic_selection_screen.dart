@@ -28,7 +28,7 @@ class TopicSelectionScreen extends StatelessWidget {
           IconButton(
             onPressed: () => (),
             iconSize: 32,
-            icon: Icon(Icons.volume_up),
+            icon: const Icon(Icons.volume_up),
           ),
           IconButton(
             onPressed: () => (),
@@ -46,41 +46,34 @@ class TopicSelectionScreen extends StatelessWidget {
               height: 1.0,
             )),
       ),
-      body: ListView(children: const [
-        Padding(
-          padding: EdgeInsets.all(16),
-          child: Column(
-            children: [
-              _CategoryView(icon: Icons.menu, title: 'Explain', content: [
-                'Explain Quantum physics',
-                'Best programming language',
-              ]),
-              SizedBox(height: 16),
-              _CategoryView(icon: Icons.edit, title: 'Write & edit', content: [
-                'Write a tweet about global warming',
-                'Write a poem about flower and love',
-                'Write a rap song lyrics about'
-              ]),
-              SizedBox(height: 16),
-              _CategoryView(icon: Icons.edit, title: 'translate', content: [
-                'How do you say "how are you" in korean?',
-                'Write a poem about flower and love',
-                'Write a rap song lyrics about'
-              ])
-            ],
-          ),
-        ),
-      ]),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 32.0),
+        child: ListView(children: const [
+          _CategoryView(icon: Icons.menu, title: 'Explain', content: [
+            'Explain Quantum physics',
+            'Best programming language',
+          ]),
+          SizedBox(height: 24),
+          _CategoryView(icon: Icons.edit, title: 'Write & edit', content: [
+            'Write a tweet about global warming',
+            'Write a poem about flower and love',
+            'Write a rap song lyrics about'
+          ]),
+          SizedBox(height: 24),
+          _CategoryView(icon: Icons.translate, title: 'translate', content: [
+            'How do you say "how are you" in korean?',
+            'Write a poem about flower and love',
+            'Write a rap song lyrics about'
+          ]),
+        ]),
+      ),
     );
   }
 }
 
 class _CategoryView extends StatelessWidget {
   const _CategoryView(
-      {super.key,
-      required this.icon,
-      required this.title,
-      required this.content});
+      {required this.icon, required this.title, required this.content});
 
   final IconData icon;
   final String title;
@@ -91,13 +84,14 @@ class _CategoryView extends StatelessWidget {
     return Column(
       children: [
         Icon(icon),
-        Text(title),
+        const SizedBox(height: 4),
+        Text(title, style: const TextStyle(fontWeight: FontWeight.w600)),
         const SizedBox(height: 16),
         Column(
           children: content
               .map(
                 (str) => Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.symmetric(vertical: 4.0),
                   child: ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(
@@ -108,7 +102,14 @@ class _CategoryView extends StatelessWidget {
                     },
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [Text(str)]),
+                        children: [
+                          Text(
+                            str,
+                            style: const TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400),
+                          )
+                        ]),
                   ),
                 ),
               )
