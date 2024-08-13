@@ -30,28 +30,19 @@ class AIAssistant extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            SizedBox(
-              width: 300,
-              height: 50,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromRGBO(50, 104, 255, 1),
-                ),
-                onPressed: () {
-                  context.goTo(const ChatGPTPage());
-                },
-                child: const Padding(
-                  padding: EdgeInsets.only(left: 80),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text('Continue', style: TextStyle(color: Colors.white)),
-                      Icon(Icons.arrow_forward, color: Colors.white),
-                    ],
-                  ),
-                ),
-              ),
-            ),
+            myButton(
+              onPressed: () {
+                context.goTo(const ChatGPTPage());
+              },
+              padding: const EdgeInsets.only(left: 60),
+              icon: Icons.arrow_forward,
+              backgroundColorForButton: const Color.fromRGBO(50, 104, 255, 1),
+              iconColor: Colors.white,
+              text: 'Continue',
+              fontSize: 20,
+              textColor: Colors.white,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            )
           ],
         ),
       ),

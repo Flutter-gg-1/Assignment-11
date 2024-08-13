@@ -48,7 +48,7 @@ class myButton extends StatelessWidget {
   final IconData? icon;
   final EdgeInsetsGeometry padding;
   const myButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     this.backgroundColorForButton,
@@ -58,7 +58,7 @@ class myButton extends StatelessWidget {
     this.mainAxisAlignment = MainAxisAlignment.center,
     this.icon,
     required this.padding,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
