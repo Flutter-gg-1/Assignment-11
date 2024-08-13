@@ -1,3 +1,4 @@
+import 'package:assignment11/page/feature_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -8,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          padding:const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -20,7 +21,13 @@ class HomeScreen extends StatelessWidget {
                       const Color(0xff3268ff),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const FeatureScreen(),
+                      ),
+                    );
+                  },
                   child: const Stack(
                     children: [
                       Center(
