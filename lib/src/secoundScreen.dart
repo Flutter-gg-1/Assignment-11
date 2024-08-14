@@ -1,3 +1,4 @@
+import 'package:assinment11/src/theirdScrean.dart';
 import 'package:flutter/material.dart';
 
 class Secoundscreen extends StatelessWidget {
@@ -37,10 +38,10 @@ class Secoundscreen extends StatelessWidget {
             ),
           ),
           bottom: const PreferredSize(
-            preferredSize: Size.fromHeight(1.0), // حجم الخط الفاصل
+            preferredSize: Size.fromHeight(1.0),
             child: Divider(
-              color: Colors.grey, // لون الخط الفاصل
-              thickness: 1.0, // سماكة الخط الفاصل
+              color: Colors.grey,
+              thickness: 1.0,
             ),
           ),
         ),
@@ -86,6 +87,12 @@ class Secoundscreen extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(40),
                     ),
+                    onTap: () {
+                      Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return const Theirdscrean();
+                      }));
+                    },
                     title: const Center(
                       child: Text(
                         "Best programming language",
@@ -101,6 +108,10 @@ class Secoundscreen extends StatelessWidget {
                 Icons.border_color_outlined,
                 size: 30,
               ),
+              Text("write & edite"),
+              SizedBox(
+                height: 10,
+              ),
               Padding(
                 padding: const EdgeInsets.all(2),
                 child: Card(
@@ -113,7 +124,7 @@ class Secoundscreen extends StatelessWidget {
                     ),
                     title: const Center(
                       child: Text(
-                        "Best programming language",
+                        "write a tweet about golbal warming",
                       ),
                     ),
                   ),
@@ -131,7 +142,7 @@ class Secoundscreen extends StatelessWidget {
                     ),
                     title: const Center(
                       child: Text(
-                        "Best programming language",
+                        "write a tweet about flower and love",
                       ),
                     ),
                   ),
@@ -149,7 +160,7 @@ class Secoundscreen extends StatelessWidget {
                     ),
                     title: const Center(
                       child: Text(
-                        "Best programming language",
+                        "write a rao song lyrics about",
                       ),
                     ),
                   ),
@@ -172,7 +183,7 @@ class Secoundscreen extends StatelessWidget {
                     ),
                     title: const Center(
                       child: Text(
-                        "Best programming language",
+                        "ho do you say  'how are you' in korean? ",
                       ),
                     ),
                   ),
@@ -190,7 +201,7 @@ class Secoundscreen extends StatelessWidget {
                     ),
                     title: const Center(
                       child: Text(
-                        "Best programming language",
+                        "write a poeam about fkower and love",
                       ),
                     ),
                   ),
@@ -208,7 +219,7 @@ class Secoundscreen extends StatelessWidget {
                     ),
                     title: const Center(
                       child: Text(
-                        "Best programming language",
+                        " write a rap soung lyrics about",
                       ),
                     ),
                   ),

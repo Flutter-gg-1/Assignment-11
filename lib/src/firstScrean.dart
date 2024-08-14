@@ -51,7 +51,7 @@ class Firstscrean extends StatelessWidget {
                 title: Center(
                   child: Text(
                     "Continue",
-                    style: TextStyle(color: Colors.white), // تغيير لون النص
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
               ),
