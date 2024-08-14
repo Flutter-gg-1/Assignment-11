@@ -44,11 +44,11 @@ This is a simple Flutter application that demonstrates the use of multiple scree
 
 
 
-## License
+### new update first screan
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
----
 
-**Note**: This is a basic implementation meant for demonstration purposes. You can extend the functionalities and improve the UI as per your requirements.
+
+![image](https://github.com/user-attachments/assets/7d649b10-0a2b-4b0f-8b69-be71c589065a)
+
 
