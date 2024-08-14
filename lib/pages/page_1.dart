@@ -27,6 +27,7 @@ class AIAssistant extends StatelessWidget {
                   fontSize: 20,
                   color: Color.fromRGBO(0, 0, 0, 0.5),
                 ),
+                textAlign: TextAlign.center,
               ),
             ),
             const Spacer(),
