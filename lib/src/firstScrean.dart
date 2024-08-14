@@ -9,10 +9,10 @@ class Firstscrean extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          Expanded(
+          const Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
+              children: [
                 Text(
                   "Your AI Assistant",
                   style: TextStyle(
@@ -34,8 +34,7 @@ class Firstscrean extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Card(
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(40),
-                side: BorderSide(color: Colors.blue, width: 2),
+                borderRadius: BorderRadius.circular(30),
               ),
               child: ListTile(
                 shape: RoundedRectangleBorder(
@@ -44,14 +43,21 @@ class Firstscrean extends StatelessWidget {
                 onTap: () {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) {
-                    return Secoundscreen();
+                    return const Secoundscreen();
                   }));
                 },
+                trailing: const Icon(
+                  Icons.arrow_forward,
+                  color: Colors.white,
+                  size: 25,
+                ),
                 tileColor: Colors.blue,
-                title: Center(
-                  child: Text(
+                title: Container(
+                  margin: const EdgeInsets.only(left: 40),
+                  child: const Text(
                     "Continue",
-                    style: TextStyle(color: Colors.white),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),
               ),
