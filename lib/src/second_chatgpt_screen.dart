@@ -1,5 +1,5 @@
-import 'package:assignment11/src/recieve_message.dart';
-import 'package:assignment11/src/send_message.dart';
+import 'package:assignment11/src/widget/recieve_message.dart';
+import 'package:assignment11/src/widget/send_message.dart';
 import 'package:flutter/material.dart';
 
 class SecondChatgptScreen extends StatelessWidget {
