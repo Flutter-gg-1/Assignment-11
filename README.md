@@ -1,16 +1,18 @@
-# chatgpt
+![My Image](./lib/images/img_Tuwaiq.png)
 
-A new Flutter project.
 
-## Getting Started
+# Flutter ChatGPT Page 
 
-This project is a starting point for a Flutter application.
+ChatGPT page . ChatGPT help for translate and others , AppBar > back and action , and list tiles with leading icons and subtitles.
 
-A few resources to get you started if this is your first Flutter project:
+<hr>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Features:**
+<li>Expanded to put the clickable button down
+<li>used SingleChildScrollView to let me scroll
+<li>used AppBar and impelemnet title \ action 
+<li>Customizable colors and icons
+<hr>
+
+![My Image](./lib/images/cf4953c324b4106bd85068a609377044.gif)
