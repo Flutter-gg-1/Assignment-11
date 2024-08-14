@@ -1,17 +1,19 @@
-## Assignment-11:
-Implement this design in an app using Flutter, using widgets that we take in lesson today.
+# AI Chat Application
 
-<img width="1007" alt="Screenshot 2024-08-13 at 4 06 57 PM" src="https://github.com/user-attachments/assets/6ff9445b-7580-44c8-ba54-59ecf5529ded">
+## Overview
+This Flutter application demonstrates a simple chat interface, utilizing a variety of widgets and libraries to create an engaging user experience.
 
-## Note:
-1. Use Navigator widgets; to navigate between screens.
-2. Upload GIF or Video of your app.
-3. If you upload GIF, upload it in README file.
+Image.asset ("gif.gif", width: 200, height: 200,)
+
+## Widgets and Libraries Used
+- **Flutter SDK**:The application is built using the Flutter framework for cross-platform development.
+
+- **Material Components**: The app uses Material Design components (e.g., AppBar, Text, IconButton, Column, etc.) for creating a consistent and visually appealing user interface..
+- **Custom Bubble Widgets**: The chat application contains custom message bubble widgets, such as BubbleSpecialOne and BubbleSpecialThree. These widgets create unique message bubbles for displaying messages with different styles. For more complex chat UI requirements, you can use third-party libraries like flutter_chat_bubble.
+- **Navigation**: The app utilizes Flutter's navigation features for moving between screens. For example, the icon button in the AppBar navigates to the ExplainPage.
 
 
-## Submission Details:
-Deadline: 14 August 2024
-Submission Format: Provide your Flutter code file(s) along with a README file explaining widgets you are used.
-
-Good luck 🚀
-and happy coding! 🧑‍💻
+## References
+- [Flutter SDK](https://flutter.dev/)
+- [Flutter Navigation](https://flutter.dev/docs/development/ui/navigation)
+- [flutter_chat_bubble](https://pub.dev/packages/flutter_chat_bubble)
