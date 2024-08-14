@@ -3,7 +3,7 @@
 ## Overview
 This Flutter application demonstrates a simple chat interface, utilizing a variety of widgets and libraries to create an engaging user experience.
 
-Image.asset('gif.gif', width: 200, height: 200),
+![gif](https://github.com/user-attachments/assets/06fa9983-4e22-4511-8e91-605bca9c25e2)
 
 ## Widgets and Libraries Used
 - **Flutter SDK**:The application is built using the Flutter framework for cross-platform development.
