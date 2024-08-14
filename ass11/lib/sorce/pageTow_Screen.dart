@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:ass11/sorce/pageThree_Screen.dart';
 
+//هنا بحاول اطبق كلام لجين اني اقسم وجدت بقسمها اليوم في نفس صفحه 
+//ارجعل للمقطع حق امس كان يشرح نفس هذه صور
 
-
+//الصفحه الثانبه  اضبطها كويس فكره بس في مربع صغير احط بتون تروح لصفحه ثانيه 
+//الباقي تكون كانها خيارات بس ما فيها تنقل 
 class pageTwo_Screen extends StatelessWidget {
   const pageTwo_Screen({super.key});
-////
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

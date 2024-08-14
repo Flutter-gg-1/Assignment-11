@@ -10,7 +10,7 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
+    //اخليه يبدا من صفحة الاولى
     return const MaterialApp(home:Home_Screen());
     
        

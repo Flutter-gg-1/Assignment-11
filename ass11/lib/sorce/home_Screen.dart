@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:ass11/sorce/pageTow_Screen.dart';
+//الصفحه الاولى اضبطها كويس فكره بس في مربع صغير احط بتون تروح لصفحه ثانيه 
 
 class Home_Screen extends StatelessWidget {
   const Home_Screen({super.key});
