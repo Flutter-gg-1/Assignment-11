@@ -1,17 +1,41 @@
-## Assignment-11:
-Implement this design in an app using Flutter, using widgets that we take in lesson today.
+<p align="center">
+<img src="./assets/logo-h.png" alt="Tuwaiq" width="400"/>
 
-<img width="1007" alt="Screenshot 2024-08-13 at 4 06 57 PM" src="https://github.com/user-attachments/assets/6ff9445b-7580-44c8-ba54-59ecf5529ded">
+# ChatGPT simulator
+ChatGPT simulator GIF:
+<p align="center">
+<img src="./assets/gif.gif" width="300"/>
 
-## Note:
-1. Use Navigator widgets; to navigate between screens.
-2. Upload GIF or Video of your app.
-3. If you upload GIF, upload it in README file.
+# introduction
+A ChatGPT simulator with three screens that can be navigated using arrow keys. The main screen offers an introduction to the app, and you can move to the next screen by clicking `Continue` The following screen contains a Frequently Asked Questions (FAQ) section; selecting a `Best programming language` question will initiate a conversation with ChatGPT. You can use the 'Back' arrow to navigate between these three screens.
 
+## Getting started
+ ### Dependencies
+You need to install Flutter
 
-## Submission Details:
-Deadline: 14 August 2024
-Submission Format: Provide your Flutter code file(s) along with a README file explaining widgets you are used.
+### Executing program
+1- Fork the Repository.
+2- Copy url then go to terminal and write: 
+```
+git clone ‹url›
+```
+3- Go to the cloned project using:
+```
+ cd < PROJECT-NAME> /
+ ``` 
+4- Create a new branch and checkout this branch: 
+```
+git checkout -b branch-name
+```
+5- To create and start dart project 
+```
+flutter create project_name
+cd project_name
+code .
+```
 
-Good luck 🚀
-and happy coding! 🧑‍💻
+6- Now to run the program in terminal write:
+```
+Flutter run
+```
+
