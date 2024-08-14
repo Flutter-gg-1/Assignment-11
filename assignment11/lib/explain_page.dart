@@ -1,5 +1,6 @@
 import 'package:assignment11/homepage.dart';
 import 'package:flutter/material.dart';
+import 'chat_page.dart';
 
 class ExplainPage extends StatelessWidget {
   const ExplainPage({super.key});
@@ -79,7 +80,7 @@ class ExplainPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const Homepage()),
+                    MaterialPageRoute(builder: (context) => const ChatPage()),
                   );
                 },
                 style: ElevatedButton.styleFrom(
