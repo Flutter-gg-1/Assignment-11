@@ -35,7 +35,7 @@ class AIAssistant extends StatelessWidget {
                 context.goTo(const ChatGPTPage());
               },
               padding: const EdgeInsets.only(left: 90),
-              icon: Icons.arrow_forward,
+              icon: Icons.arrow_forward_ios,
               backgroundColorForButton: const Color.fromRGBO(50, 104, 255, 1),
               iconColor: Colors.white,
               text: 'Continue',
