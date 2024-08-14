@@ -17,11 +17,14 @@ For more in-depth information on navigation patterns, you can check out the offi
 
 To get started with this app, clone the repository and follow the instructions in the installation guide.
 
-## Output 
+## Output
 
 
 
 
-https://github.com/user-attachments/assets/fcde2057-494b-4c8c-8cec-426268ce5382
+https://github.com/user-attachments/assets/d0c67225-7768-4155-b38f-64a649258e2a
+
+
+
 
 Thanks 🌺
