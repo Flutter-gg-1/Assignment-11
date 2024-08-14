@@ -1,17 +1,45 @@
 ## Assignment-11:
-Implement this design in an app using Flutter, using widgets that we take in lesson today.
+# ChatGPT Flutter App
 
-<img width="1007" alt="Screenshot 2024-08-13 at 4 06 57 PM" src="https://github.com/user-attachments/assets/6ff9445b-7580-44c8-ba54-59ecf5529ded">
+This Flutter application simulates a basic ChatGPT interface, allowing users to interact with an AI assistant, ask questions, and receive generated responses. The app is structured into multiple screens, each designed with specific functionalities.
 
-## Note:
-1. Use Navigator widgets; to navigate between screens.
-2. Upload GIF or Video of your app.
-3. If you upload GIF, upload it in README file.
+## Features
+
+- **Welcome Screen**: An introductory screen that presents the app's purpose and offers navigation to further functionalities.
+- **Prompt Selection**: A screen offering predefined prompts that users can select to interact with the AI.
+- **Chat Interface**: A screen that mimics a chat environment, allowing users to type messages and receive responses from the AI.
+
+## Screens Overview
+
+### First Screen
+
+- **Description**: Serves as the welcome screen of the app.
+- **Components**:
+  - App title and description.
+  - A "Continue" button that navigates to the Second Screen.
+
+### Second Screen
+
+- **Description**: Displays different categories of prompts that users can select.
+- **Components**:
+  - Predefined prompts categorized under sections like "Explain".
+  - Navigation to the Third Screen on button press.
+
+### Third Screen
+
+- **Description**: A simulated chat interface where users can interact with the AI.
+- **Components**:
+  - Chat bubbles for displaying user and AI messages.
+  - A text field for typing messages.
+  - A send button to submit queries.
+
+## Getting Started
 
 
-## Submission Details:
-Deadline: 14 August 2024
-Submission Format: Provide your Flutter code file(s) along with a README file explaining widgets you are used.
 
-Good luck 🚀
-and happy coding! 🧑‍💻
+
+
+## Outupt
+<p align="center">
+   <img src="./screen_shoot/gifvideo.gif" alt="Tuwaiq" width="300"/>
+   <img src="./assets/Screenshot_2.png" alt="Tuwaiq" width="300"/>
