@@ -45,7 +45,7 @@ The widgets that are used:
 
 ## Output 
 
-https://github.com/user-attachments/assets/ac30f7b8-87ea-4ce1-952a-5cb4e8944e76
+![](https://github.com/user-attachments/assets/605573d0-cd5e-4bda-916b-d521d8c6315c)
 
 ## created by
 Amjad Noor Elahi
