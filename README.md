@@ -45,7 +45,10 @@ The widgets that are used:
 
 ## Output 
 
-![](https://github.com/user-attachments/assets/605573d0-cd5e-4bda-916b-d521d8c6315c)
+<p align="center">
+<img src="https://github.com/user-attachments/assets/605573d0-cd5e-4bda-916b-d521d8c6315c" alt="Tuwaiq" width="200"/>
+<br/>
+
 
 ## created by
 Amjad Noor Elahi
