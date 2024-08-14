@@ -70,7 +70,6 @@ class ChatScreen extends StatelessWidget {
                       'languages are popular in their place and'
                       'in the way they are used, and many'
                       'programmers learn and use them'),
-                      
             ],
           ),
         ),

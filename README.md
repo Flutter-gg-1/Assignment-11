@@ -1,16 +1,36 @@
 # chatgpt_ui
 
-A new Flutter project.
+A new Flutter project that contain three amazing screen for ChatGpt apps.
 
-## Getting Started
+## Main Widget
 
-This project is a starting point for a Flutter application.
+### Scaffold
+the root for each screen widget
 
-A few resources to get you started if this is your first Flutter project:
+### Container
+custmized container 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+in example chat container that hold a message :
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](./lib/assest/image.png)
+
+### Flexible
+for control container size
+
+in exaple for holding long message in chat :
+
+![alt text](./lib/assest/image-1.png)
+
+### Google Fonts
+for additional fonts 
+
+## Main Funcuality
+
+### Navigator
+for routing between screen 
+
+![alt text](./lib/assest/image-2.png)
+
+## Output
+
+![alt text](./lib/assest/chatGptGif.gif)
