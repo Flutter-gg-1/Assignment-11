@@ -1,3 +1,4 @@
+import 'package:ai_assistant/menue_chatgpt_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,28 +6,62 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: const Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+    return Scaffold(
+      body: Column(
         children: [
-          Text(
-            "You AI Assistance",
-            style: TextStyle(fontSize: 16, color: Colors.blue),
+          const SizedBox(
+            height: 300,
           ),
-          SizedBox(
+          const Text(
+            "You AI Assistance",
+            style: TextStyle(
+                fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
+          ),
+          const SizedBox(
             height: 20,
           ),
-          Text(
-            "Using this software,you can ask you questions and recive articles using artificial intelligence assistant",
-            style: TextStyle(
-              fontSize: 14,
-              color: Colors.grey,
+          Container(
+            margin: const EdgeInsets.only(right: 16),
+            child: const Text(
+              "Using this software,you can ask you questions and recive articles using artificial intelligence assistant",
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.grey,
+              ),
+              textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(
-            height: 200,
+          const SizedBox(
+            height: 230,
           ),
-    
+          Container(
+              width: 350,
+              height: 50,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                color: Colors.blue,
+              ),
+              child: Center(
+                child: ListTile(
+                  title: const Text(
+                    "Continue",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18),
+                  ),
+                  trailing: const Icon(Icons.arrow_forward),
+                  iconColor: Colors.white,
+                  onTap: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return const MenueChatgptScreen();
+                    }));
+                  },
+                ),
+              )),
         ],
       ),
     );

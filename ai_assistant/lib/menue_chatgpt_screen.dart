@@ -1,3 +1,4 @@
+import 'package:ai_assistant/chatgpt_screen.dart';
 import 'package:flutter/material.dart';
 
 class MenueChatgptScreen extends StatelessWidget {
@@ -26,7 +27,7 @@ class MenueChatgptScreen extends StatelessWidget {
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.canPop(context);
+              Navigator.pop(context);
             },
           ),
           actions: const [
@@ -44,7 +45,7 @@ class MenueChatgptScreen extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(
-                height: 18,
+                height: 15,
               ),
               const Icon(
                 Icons.menu_book_rounded,
@@ -68,10 +69,10 @@ class MenueChatgptScreen extends StatelessWidget {
               Container(
                 width: 320,
                 height: 40,
-                alignment: AlignmentDirectional.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "Explain Quantum physics",
                   style: TextStyle(fontWeight: FontWeight.w400),
@@ -80,16 +81,25 @@ class MenueChatgptScreen extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Container(
-                width: 320,
-                height: 40,
-                alignment: AlignmentDirectional.center,
-                decoration: BoxDecoration(
-                    color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
-                child: const Text(
-                  "Best programming language",
-                  style: TextStyle(fontWeight: FontWeight.w400),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) {
+                    return const ChatgptScreen();
+                  }));
+                },
+                child: Container(
+                  width: 320,
+                  height: 40,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                      color: Colors.grey.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(20)),
+                  child: const Text(
+                    "Best programming language",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 14, color: Colors.black),
+                  ),
                 ),
               ),
               const SizedBox(height: 20),
@@ -115,10 +125,10 @@ class MenueChatgptScreen extends StatelessWidget {
               Container(
                 width: 320,
                 height: 40,
-                alignment: AlignmentDirectional.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "Write a tweet about global warming",
                   style: TextStyle(fontWeight: FontWeight.w400),
@@ -133,7 +143,7 @@ class MenueChatgptScreen extends StatelessWidget {
                 alignment: AlignmentDirectional.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "Write a poem about flower and love",
                   style: TextStyle(fontWeight: FontWeight.w400),
@@ -145,10 +155,10 @@ class MenueChatgptScreen extends StatelessWidget {
               Container(
                 width: 320,
                 height: 40,
-                alignment: AlignmentDirectional.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "Write a rap song lyrics about",
                   style: TextStyle(fontWeight: FontWeight.w400),
@@ -177,10 +187,10 @@ class MenueChatgptScreen extends StatelessWidget {
               Container(
                 width: 320,
                 height: 40,
-                alignment: AlignmentDirectional.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "How do you say “how are you” in Arabic?",
                   style: TextStyle(fontWeight: FontWeight.w400),
@@ -192,25 +202,25 @@ class MenueChatgptScreen extends StatelessWidget {
               Container(
                 width: 320,
                 height: 40,
-                alignment: AlignmentDirectional.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "Write a poem about flower and love",
                   style: TextStyle(fontWeight: FontWeight.w400),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Container(
                 width: 320,
                 height: 40,
-                alignment: AlignmentDirectional.center,
+                alignment: Alignment.center,
                 decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
-                    borderRadius: BorderRadius.circular(50)),
+                    borderRadius: BorderRadius.circular(20)),
                 child: const Text(
                   "Write a rap song lyrics about",
                   style: TextStyle(fontWeight: FontWeight.w400),
