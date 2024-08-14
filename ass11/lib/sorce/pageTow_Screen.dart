@@ -33,7 +33,7 @@ class pageTwo_Screen extends StatelessWidget {
                 color: Colors.green,
                 fontWeight: FontWeight.bold,
                 fontSize: 15,
-              ),
+              ),//
             ),
           ],
         ),
