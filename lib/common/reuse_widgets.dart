@@ -4,28 +4,32 @@ import 'package:flutter/material.dart';
 PreferredSizeWidget? appBar() {
   return AppBar(
     leading: const Padding(
+      padding: EdgeInsets.only(left: 50),
+      child: Icon(Icons.arrow_back),
+    ),
+    title: const Padding(
       padding: EdgeInsets.only(left: 20),
-      child: Row(
-        children: [
-          Icon(Icons.arrow_back),
-          SizedBox(width: 10),
-          Column(
-            children: [
-              Expanded(
-                  child: Text('ChatGPT',
-                      style: TextStyle(
-                        fontSize: 20,
-                        color: Color.fromRGBO(0, 86, 254, 1),
-                      ))),
-              Expanded(
-                  child:
-                      Text('* Online', style: TextStyle(color: Colors.green))),
-            ],
-          ),
-        ],
+      child: Align(
+        alignment: Alignment.centerLeft,
+        child: Row(
+          children: [
+            SizedBox(width: 10),
+            Column(
+              children: [
+                Text('ChatGPT',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromRGBO(0, 86, 254, 1),
+                    )),
+                Text('* Online', style: TextStyle(color: Colors.green)),
+              ],
+            ),
+          ],
+        ),
       ),
     ),
     actions: const [
+      SizedBox(width: 30),
       Row(
         children: [
           Icon(Icons.volume_up),
