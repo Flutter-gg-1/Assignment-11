@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart'; // imports material design widgets and properities
-import 'package:assignment11/src/choices_screen.dart'; // widget represents the user choices page
+import 'package:assignment11/src/screens/choices_screen.dart'; // widget represents the user choices page
 
 // widget represents welcome page
 class WelcomeScreen extends StatelessWidget {

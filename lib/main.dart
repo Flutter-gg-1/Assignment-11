@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';                // imports material design widgets and properities
-import 'package:assignment11/src/welcome_screen.dart'; // widget represents welcome page
+import 'package:flutter/material.dart';                        // imports material design widgets and properities
+import 'package:assignment11/src/screens/welcome_screen.dart'; // widget represents welcome page
 
 void main() {
   runApp(const MainApp());

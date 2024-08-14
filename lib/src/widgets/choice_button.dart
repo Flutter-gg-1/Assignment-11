@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';             // imports material design widgets and properities
-import 'package:assignment11/src/chat_screen.dart'; // widget represents chat page
+import 'package:flutter/material.dart';                     // imports material design widgets and properities
+import 'package:assignment11/src/screens/chat_screen.dart'; // widget represents chat page
 
 // widget represents a choice button
 class ChoiceButton extends StatelessWidget {

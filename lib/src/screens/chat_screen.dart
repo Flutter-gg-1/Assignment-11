@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';                 // imports material design widgets and properities
-import 'package:assignment11/src/chat_app_bar.dart';    // widget represents app bar
-import 'package:assignment11/src/user_message.dart';    // widget represents user message
-import 'package:assignment11/src/chat_response.dart';   // widget represents ChatGPT response
+import 'package:assignment11/src/widgets/chat_app_bar.dart';    // widget represents app bar
+import 'package:assignment11/src/widgets/user_message.dart';    // widget represents user message
+import 'package:assignment11/src/widgets/chat_response.dart';   // widget represents ChatGPT response
 
 // widget represents chat page
 class ChatScreen extends StatelessWidget {

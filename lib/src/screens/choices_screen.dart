@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';                 // imports material design widgets and properities
-import 'package:assignment11/src/chat_app_bar.dart';    // widget represents app bar
-import 'package:assignment11/src/choice_button.dart';   // widget represents a choice button
-import 'package:assignment11/src/icon_with_text.dart';  // widget represents an icon with bottom text
+import 'package:assignment11/src/widgets/chat_app_bar.dart';    // widget represents app bar
+import 'package:assignment11/src/widgets/choice_button.dart';   // widget represents a choice button
+import 'package:assignment11/src/widgets/icon_with_text.dart';  // widget represents an icon with bottom text
 
 // widget represents choices page
 class ChoicesScreen extends StatelessWidget {
