@@ -10,14 +10,14 @@ the root for each screen widget
 ### Container
 custmized container 
 
-in example chat container that hold a message :
+example for chat container that hold a message :
 
 ![alt text](./lib/assest/image.png)
 
 ### Flexible
 for control container size
 
-in exaple for holding long message in chat :
+example for holding long message in chat :
 
 ![alt text](./lib/assest/image-1.png)
 
@@ -27,7 +27,7 @@ for additional fonts
 ## Main Funcuality
 
 ### Navigator
-for routing between screen 
+for routing between screens 
 
 ![alt text](./lib/assest/image-2.png)
 
